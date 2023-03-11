@@ -1,6 +1,9 @@
-// header {
-//     position: absolute;
-// }
+@import "../../assets/styles/colors";
+
+header {
+  color: $color-white;
+  position: absolute;
+}
 
 .hero {
   padding-left: 0;
