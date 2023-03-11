@@ -1,0 +1,52 @@
+@import "../../assets/styles/sizes";
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/colors";
+@import "../../assets/styles/media";
+
+.hero {
+  background-image: url("../../assets/img/hero360.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 1056px;
+  color: $color-white;
+  @include media-i-phone {
+    background-image: url("../../assets/img/hero414.jpg");
+  }
+  @include media-tablet {
+    background-image: url("../../assets/img/hero768.jpg");
+  }
+  @include media-desktop {
+    background-image: url("../../assets/img/hero1024.jpg");
+    height: 1282px;
+  }
+}
+
+.titleHero {
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 776px;
+  padding-left: 14px;
+  padding-right: 14px;
+  width: 335px;
+
+  @include font-title;
+  @include media-tablet {
+    width: 100%;
+    padding-top: 818px;
+  }
+  @include media-desktop {
+    padding-top: 933px;
+  }
+}
+
+.textHero {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px;
+
+  @include media-desktop {
+    padding-top: 20px;
+  }
+}
