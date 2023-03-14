@@ -7,6 +7,7 @@ import Hero from "../../components/Hero";
 import Navigation from "../../components/Navigation/Navigation";
 
 import styles from "./PreviewPage.module.scss";
+import NewWorks from "../../components/NewWorks/NewWorks";
 
 // const pageViews = [
 //   {
@@ -32,6 +33,12 @@ export default function PreviewPage() {
         <LayoutSection id="hero" classNameProps={styles.hero}>
           <Container>
             <Hero />
+          </Container>
+        </LayoutSection>
+
+        <LayoutSection id="newWorks">
+          <Container>
+            <NewWorks />
           </Container>
         </LayoutSection>
       </main>

@@ -11,3 +11,16 @@
   font-weight: 700;
   font-size: 40px;
 }
+
+@mixin font-footer {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+@mixin font-name-of-works {
+  font-size: 36px;
+}
+
+@mixin font-small {
+  font-size: 20px;
+}
