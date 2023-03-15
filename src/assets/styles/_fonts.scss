@@ -47,3 +47,15 @@
   font-weight: 400;
   font-size: 20px;
 }
+
+@mixin font-inter-title-about-me {
+  font-family: "Inter";
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+@mixin font-inter-text-about-me {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 1.39;
+}

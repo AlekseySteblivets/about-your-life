@@ -1,0 +1,25 @@
+@import "../../assets/styles/media";
+@import "../../assets/styles/fonts";
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 18px;
+  @include media-tablet {
+    width: 25px;
+  }
+  @include media-desktop {
+    width: 40px;
+  }
+}
+
+.item {
+  margin-right: 5px;
+  @include media-desktop {
+    margin-right: 10px;
+  }
+}
