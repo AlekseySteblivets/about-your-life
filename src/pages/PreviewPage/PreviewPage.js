@@ -8,6 +8,7 @@ import Navigation from "../../components/Navigation/Navigation";
 
 import styles from "./PreviewPage.module.scss";
 import NewWorks from "../../components/NewWorks/NewWorks";
+import Portpholio from "../../components/Portpholio/Portpholio";
 
 // const pageViews = [
 //   {
@@ -39,6 +40,12 @@ export default function PreviewPage() {
         <LayoutSection id="newWorks">
           <Container>
             <NewWorks />
+          </Container>
+        </LayoutSection>
+
+        <LayoutSection id="portpholio" classNameProps={styles.hero}>
+          <Container>
+            <Portpholio />
           </Container>
         </LayoutSection>
       </main>
