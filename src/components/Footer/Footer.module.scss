@@ -1,0 +1,22 @@
+@import "../../assets/styles/colors";
+@import "../../assets/styles/fonts";
+@import "../../assets/styles/media";
+
+.block {
+  background-color: $color-grey;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+.title {
+  color: $color-white;
+  margin-bottom: 10px;
+  @include font-small;
+
+  @include media-tablet {
+    @include font-main;
+  }
+  @include media-desktop {
+    margin-bottom: 20px;
+  }
+}

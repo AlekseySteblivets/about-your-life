@@ -10,6 +10,7 @@ import styles from "./PreviewPage.module.scss";
 import NewWorks from "../../components/NewWorks/NewWorks";
 import Portpholio from "../../components/Portpholio/Portpholio";
 import AboutMe from "../../components/AboutMe";
+import Footer from "../../components/Footer/Footer";
 
 // const pageViews = [
 //   {
@@ -53,6 +54,16 @@ export default function PreviewPage() {
         <LayoutSection id="aboutMe">
           <Container>
             <AboutMe />
+          </Container>
+        </LayoutSection>
+
+        <LayoutSection
+          element="footer"
+          id="footer"
+          classNameProps={styles.hero}
+        >
+          <Container>
+            <Footer />
           </Container>
         </LayoutSection>
       </main>
