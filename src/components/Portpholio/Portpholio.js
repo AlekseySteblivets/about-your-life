@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styles from "./Portpholio.module.scss";
 
 export default function Portpholio() {
@@ -24,7 +25,7 @@ export default function Portpholio() {
           </li>
         </ul>
         <div className={styles.linkPrice}>
-          <a href="/">PRICE</a>
+          <Link to="/price">PRICE</Link>
         </div>
       </div>
       <div className={styles.bgFoto}></div>

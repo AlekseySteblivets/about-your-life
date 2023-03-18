@@ -27,46 +27,23 @@ import Footer from "../../components/Footer/Footer";
 export default function PreviewPage() {
   return (
     <>
-      <LayoutSection element="header" classNameProps={styles.header}>
+      <LayoutSection id="newWorks">
         <Container>
-          <Navigation />
+          <NewWorks />
         </Container>
       </LayoutSection>
-      <main>
-        <LayoutSection id="hero" classNameProps={styles.hero}>
-          <Container>
-            <Hero />
-          </Container>
-        </LayoutSection>
 
-        <LayoutSection id="newWorks">
-          <Container>
-            <NewWorks />
-          </Container>
-        </LayoutSection>
+      <LayoutSection id="portpholio" classNameProps={styles.hero}>
+        <Container>
+          <Portpholio />
+        </Container>
+      </LayoutSection>
 
-        <LayoutSection id="portpholio" classNameProps={styles.hero}>
-          <Container>
-            <Portpholio />
-          </Container>
-        </LayoutSection>
-
-        <LayoutSection id="aboutMe">
-          <Container>
-            <AboutMe />
-          </Container>
-        </LayoutSection>
-
-        <LayoutSection
-          element="footer"
-          id="footer"
-          classNameProps={styles.hero}
-        >
-          <Container>
-            <Footer />
-          </Container>
-        </LayoutSection>
-      </main>
+      <LayoutSection id="aboutMe">
+        <Container>
+          <AboutMe />
+        </Container>
+      </LayoutSection>
     </>
   );
 }
