@@ -25,29 +25,6 @@
   font-size: 20px;
 }
 
-@mixin font-sourse-serif-big {
-  font-family: "Source Serif Pro";
-  font-weight: 700;
-  font-size: 40px;
-}
-@mixin font-sourse-serif-list-portfolio {
-  font-family: "Source Serif Pro";
-  font-weight: 400;
-  font-size: 36px;
-}
-
-@mixin font-sourse-serif-word-films {
-  font-family: "Source Serif Pro";
-  font-weight: 400;
-  font-size: 40px;
-}
-
-@mixin font-sourse-serif-word-price {
-  font-family: "Source Serif Pro";
-  font-weight: 400;
-  font-size: 20px;
-}
-
 @mixin font-inter-title-about-me {
   font-family: "Inter";
   font-size: 36px;
@@ -82,4 +59,35 @@
   font-family: "Signika";
   font-size: 15px;
   line-height: 1.23;
+}
+
+//----------------------------------------------font "Source Serif Pro"---------------------------------------------//
+
+@mixin font-sourse-serif-big {
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+  font-size: 40px;
+}
+@mixin font-sourse-serif-list-portfolio {
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 36px;
+}
+
+@mixin font-sourse-serif-word-films {
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 40px;
+}
+
+@mixin font-sourse-serif-word-price {
+  font-family: "Source Serif Pro";
+  font-weight: 400;
+  font-size: 20px;
+}
+
+@mixin font-hero-title {
+  font-family: "Source Serif Pro";
+  font-weight: 700;
+  font-size: 24px;
 }

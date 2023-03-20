@@ -8,17 +8,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 1056px;
+  height: 571px;
   color: $color-white;
   @include media-i-phone {
     background-image: url("../../assets/img/hero414.jpg");
+    height: 565px;
   }
   @include media-tablet {
     background-image: url("../../assets/img/hero768.jpg");
+    height: 1080px;
   }
   @include media-desktop {
     background-image: url("../../assets/img/hero1024.jpg");
-    height: 1282px;
+    height: 910px;
   }
 }
 
@@ -26,18 +28,19 @@
   margin: 0 auto;
   text-transform: uppercase;
   text-align: center;
-  padding-top: 776px;
-  padding-left: 14px;
-  padding-right: 14px;
+  padding-top: 372px;
+  // padding-left: 14px;
+  // padding-right: 14px;
   width: 335px;
 
-  @include font-title;
+  @include font-hero-title;
   @include media-tablet {
+    @include font-sourse-serif-big;
     width: 100%;
-    padding-top: 818px;
+    padding-top: 815px;
   }
   @include media-desktop {
-    padding-top: 933px;
+    padding-top: 638px;
   }
 }
 
@@ -45,6 +48,15 @@
   margin: 0 auto;
   text-align: center;
   padding-top: 10px;
+  font-size: 24px;
+
+  @include media-i-phone {
+    font-size: 20px;
+  }
+
+  @include media-tablet {
+    font-size: 32px;
+  }
 
   @include media-desktop {
     padding-top: 20px;
