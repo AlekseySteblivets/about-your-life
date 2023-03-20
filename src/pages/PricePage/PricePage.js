@@ -1,5 +1,6 @@
 import Container from "../../components/Container";
 import Navigation from "../../components/Navigation/Navigation";
+import Price from "../../components/Price/Price";
 import LayoutSection from "../../views/LayoutSection";
 
 import styles from "./PricePage.module.scss";
@@ -7,12 +8,11 @@ import styles from "./PricePage.module.scss";
 export default function PricePage() {
   return (
     <>
-      123
-      {/* <LayoutSection element="header" classNameProps={styles.header}>
+      <LayoutSection id="newWorks">
         <Container>
-          <Navigation />
+          <Price />
         </Container>
-      </LayoutSection> */}
+      </LayoutSection>
     </>
   );
 }

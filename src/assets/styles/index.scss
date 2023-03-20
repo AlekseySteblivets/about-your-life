@@ -1,6 +1,8 @@
 @import "./fonts/inter.scss";
 @import "./fonts/sourceSansPro.scss";
 @import "./fonts/sourceSerifPro.scss";
+@import "./fonts/delius.scss";
+@import "./fonts/signika.scss";
 
 @import "./fonts";
 @import "./colors";
@@ -8,9 +10,9 @@
 body {
   margin: 0;
   font-style: normal;
-  font-family: "Source Sans Pro", "Source Serif Pro", "Inter", -apple-system,
-    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarl",
-    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: "Source Sans Pro", "Source Serif Pro", "Inter", "Delius",
+    "Signika", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarl", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
