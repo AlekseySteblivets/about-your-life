@@ -4,6 +4,7 @@ import "./App.scss";
 import Layout from "./pages/Layout/Layout";
 import PreviewPage from "./pages/PreviewPage/PreviewPage";
 import PricePage from "./pages/PricePage/PricePage";
+import WeddingPage from "./pages/WeddingPage/WeddingPage";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<PreviewPage />} />
           <Route path="/price" element={<PricePage />} />
+          <Route path="/wedding" element={<WeddingPage />} />
         </Route>
       </Routes>
     </div>

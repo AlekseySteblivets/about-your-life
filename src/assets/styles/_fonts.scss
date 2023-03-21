@@ -54,6 +54,12 @@
   font-size: 20px;
 }
 
+@mixin font-delius-small {
+  font-family: "Delius";
+  // font-weight: 400;
+  font-size: 16px;
+}
+
 //----------------------------------------------font Signika---------------------------------------------//
 @mixin font-signika {
   font-family: "Signika";

@@ -27,6 +27,12 @@ import Footer from "../../components/Footer/Footer";
 export default function PreviewPage() {
   return (
     <>
+      <LayoutSection id="hero" classNameProps={styles.hero}>
+        <Container>
+          <Hero />
+        </Container>
+      </LayoutSection>
+
       <LayoutSection id="newWorks">
         <Container>
           <NewWorks />

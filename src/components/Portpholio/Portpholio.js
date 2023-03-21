@@ -10,7 +10,7 @@ export default function Portpholio() {
             <a href="/">family</a>
           </li>
           <li className={styles.item}>
-            <a href="/">wedding</a>
+            <Link to="/wedding">wedding</Link>
           </li>
 
           <li className={styles.item}>

@@ -17,12 +17,6 @@ export default function Layout() {
         </Container>
       </LayoutSection>
       <main>
-        <LayoutSection id="hero" classNameProps={styles.hero}>
-          <Container>
-            <Hero />
-          </Container>
-        </LayoutSection>
-
         <Outlet />
       </main>
       <LayoutSection element="footer" id="footer" classNameProps={styles.hero}>

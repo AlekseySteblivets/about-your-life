@@ -8,7 +8,7 @@ import styles from "./PricePage.module.scss";
 export default function PricePage() {
   return (
     <>
-      <LayoutSection id="newWorks">
+      <LayoutSection id="newWorks" classNameProps={styles.price}>
         <Container>
           <Price />
         </Container>

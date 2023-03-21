@@ -1,8 +1,10 @@
 @import "../../assets/styles/colors";
 
-header {
+.header {
   color: $color-white;
-  position: absolute;
+  // position: absolute;
+  position: fixed;
+  background-color: $color-grey;
 }
 
 .hero {

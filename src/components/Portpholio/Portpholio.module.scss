@@ -31,7 +31,19 @@
 }
 
 .linkPrice {
+  position: relative;
   @include font-sourse-serif-word-price;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    width: 70%;
+    border: 1px solid $color-black;
+    @include media-tablet {
+      left: 0px;
+    }
+  }
 }
 
 .list {

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import styles from "./Navigation.module.scss";
 
 export default function Navigation() {
@@ -5,13 +7,13 @@ export default function Navigation() {
     <nav className={styles.nav}>
       <ul className={styles.menu}>
         <li className={styles.item}>
-          <a href="/">home</a>
+          <Link to="/">home</Link>
         </li>
         <li className={styles.item}>
           <a href="/">portpholio</a>
         </li>
         <li className={styles.item}>
-          <a href="/">price</a>
+          <Link to="/price">price</Link>
         </li>
         <li className={styles.item}>
           <a href="/">video</a>
