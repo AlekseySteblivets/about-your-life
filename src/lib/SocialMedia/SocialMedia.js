@@ -10,59 +10,35 @@ export default function SocialMedia() {
     <ul className={styles.menu}>
       <li className={styles.item}>
         <a
-          className={styles.link}
+          className={styles.linkInstagram}
           href="https://www.instagram.com/"
           target="_blank"
           rel="noreferrer"
-        >
-          <img
-            src={iconInstagram}
-            alt="icon social media"
-            className={styles.icon}
-          />
-        </a>
+        ></a>
       </li>
       <li className={styles.item}>
         <a
-          className={styles.link}
+          className={styles.linkTelegram}
           href="https://web.telegram.org/"
           target="_blank"
           rel="noreferrer"
-        >
-          <img
-            src={iconTelegram}
-            alt="icon social media"
-            className={styles.icon}
-          />
-        </a>
+        ></a>
       </li>
       <li className={styles.item}>
         <a
-          className={styles.link}
+          className={styles.linkFb}
           href="https://www.youtube.com/"
           target="_blank"
           rel="noreferrer"
-        >
-          <img
-            src={iconYoutube}
-            alt="icon social media"
-            className={styles.icon}
-          />
-        </a>
+        ></a>
       </li>
       <li className={styles.item}>
         <a
-          className={styles.link}
+          className={styles.linkYouTube}
           href="https://www.facebook.com/"
           target="_blank"
           rel="noreferrer"
-        >
-          <img
-            src={iconFacebook}
-            alt="icon social media"
-            className={styles.icon}
-          />
-        </a>
+        ></a>
       </li>
     </ul>
   );

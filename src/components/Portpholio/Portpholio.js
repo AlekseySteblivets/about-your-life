@@ -14,7 +14,7 @@ export default function Portpholio() {
           </li>
 
           <li className={styles.item}>
-            <a href="/">couples</a>
+            <Link to="/couples">couples</Link>
           </li>
 
           <li className={styles.item}>

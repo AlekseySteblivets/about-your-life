@@ -3,15 +3,16 @@
 @import "../../assets/styles/media";
 
 .block {
-  background-color: $color-grey;
-  padding-top: 20px;
-  padding-bottom: 12px;
+  // background-color: $color-grey;
+  color: $color-black;
+  // padding-top: 20px;
+  // padding-bottom: 12px;
 }
 
 .title {
-  color: $color-white;
+  // color: $color-white;
   margin-bottom: 10px;
-  @include font-small;
+  @include font-delius;
 
   @include media-tablet {
     @include font-main;
