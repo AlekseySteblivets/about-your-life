@@ -48,6 +48,12 @@
 }
 
 //----------------------------------------------font Delius---------------------------------------------//
+@mixin font-delius-big {
+  font-family: "Delius";
+  // font-weight: 400;
+  font-size: 24px;
+}
+
 @mixin font-delius {
   font-family: "Delius";
   // font-weight: 400;
@@ -58,6 +64,12 @@
   font-family: "Delius";
   // font-weight: 400;
   font-size: 16px;
+}
+
+@mixin font-delius-smaller {
+  font-family: "Delius";
+  // font-weight: 400;
+  font-size: 15px;
 }
 
 //----------------------------------------------font Signika---------------------------------------------//

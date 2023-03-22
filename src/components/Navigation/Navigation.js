@@ -1,8 +1,17 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import Select from "../../lib/Select";
 
 import styles from "./Navigation.module.scss";
 
 export default function Navigation() {
+  const [numberMonth, setNumberMonth] = useState("portfolio");
+  const monthList = ["wedding", "couples", "family", "portrait"];
+
+  const passNumberMonth = (selectedEl) => {
+    setNumberMonth(selectedEl);
+  };
+
   return (
     <nav className={styles.nav}>
       <ul className={styles.menu}>
@@ -10,7 +19,12 @@ export default function Navigation() {
           <Link to="/">home</Link>
         </li>
         <li className={styles.item}>
-          <a href="/">portpholio</a>
+          {/* <a href="/">portpholio</a> */}
+          <Select
+            arrData={monthList}
+            currData={numberMonth}
+            passNumberMonthOrYear={passNumberMonth}
+          />
         </li>
         <li className={styles.item}>
           <Link to="/price">price</Link>
