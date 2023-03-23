@@ -1,5 +1,5 @@
 import Container from "../../components/Container";
-import Navigation from "../../components/Navigation/Navigation";
+
 import Price from "../../components/Price/Price";
 import LayoutSection from "../../views/LayoutSection";
 
