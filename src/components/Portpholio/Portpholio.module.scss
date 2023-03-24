@@ -22,12 +22,13 @@
   @include media-tablet {
     margin-bottom: 30px;
   }
+}
 
-  &:last-child {
-    text-transform: uppercase;
-    margin-bottom: 76px;
-    @include font-sourse-serif-word-films;
-  }
+.blockFilm {
+  text-transform: uppercase;
+  margin-bottom: 76px;
+  color: $color-white;
+  @include font-sourse-serif-word-films;
 }
 
 .linkPrice {

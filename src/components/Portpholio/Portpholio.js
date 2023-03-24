@@ -1,29 +1,24 @@
 import { Link } from "react-router-dom";
 import styles from "./Portpholio.module.scss";
+import { portpholioList } from "../../utils/portpholioList";
 
 export default function Portpholio() {
+  console.log("portpholioList", portpholioList);
   return (
     <div className={styles.block}>
       <div className={styles.list}>
         <ul className={styles.menu}>
-          <li className={styles.item}>
-            <a href="/">family</a>
-          </li>
-          <li className={styles.item}>
-            <Link to="/wedding">wedding</Link>
-          </li>
-
-          <li className={styles.item}>
-            <Link to="/couples">couples</Link>
-          </li>
-
-          <li className={styles.item}>
-            <a href="/">portrait</a>
-          </li>
-          <li className={styles.item}>
-            <a href="/">films</a>
-          </li>
+          {portpholioList.map((namePortpholio) => {
+            return (
+              <li key={namePortpholio} className={styles.item}>
+                <Link to={namePortpholio}>{namePortpholio}</Link>
+              </li>
+            );
+          })}
         </ul>
+        <div className={styles.blockFilm}>
+          <Link to="/films">films</Link>
+        </div>
         <div className={styles.linkPrice}>
           <Link to="/price">PRICE</Link>
         </div>
