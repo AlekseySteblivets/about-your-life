@@ -1,16 +1,15 @@
 // import { Route, Routes, Navigate } from "react-router-dom";
+// import { useMatches } from "react-router-dom";
 
 import Container from "../../components/Container";
 // import Navigation from "../../components/Navigation";
 import LayoutSection from "../../views/LayoutSection";
 import Hero from "../../components/Hero";
-import Navigation from "../../components/Navigation/Navigation";
 
 import styles from "./PreviewPage.module.scss";
 import NewWorks from "../../components/NewWorks/NewWorks";
 import Portpholio from "../../components/Portpholio/Portpholio";
 import AboutMe from "../../components/AboutMe";
-import Footer from "../../components/Footer/Footer";
 
 // const pageViews = [
 //   {
@@ -25,6 +24,8 @@ import Footer from "../../components/Footer/Footer";
 // ];
 
 export default function PreviewPage() {
+  // console.log("this.props", this.props);
+
   return (
     <>
       <LayoutSection id="hero" classNameProps={styles.hero}>

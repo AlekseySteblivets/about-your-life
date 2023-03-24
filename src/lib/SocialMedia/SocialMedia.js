@@ -1,8 +1,3 @@
-import iconInstagram from "../../assets/img/icon-instagram.png";
-import iconFacebook from "../../assets/img/icon-facebook.png";
-import iconTelegram from "../../assets/img/icon-telegram.png";
-import iconYoutube from "../../assets/img/icon-youtube.png";
-
 import styles from "./SocialMedia.module.scss";
 
 export default function SocialMedia() {
@@ -14,7 +9,9 @@ export default function SocialMedia() {
           href="https://www.instagram.com/"
           target="_blank"
           rel="noreferrer"
-        ></a>
+        >
+          {" "}
+        </a>
       </li>
       <li className={styles.item}>
         <a
@@ -22,7 +19,9 @@ export default function SocialMedia() {
           href="https://web.telegram.org/"
           target="_blank"
           rel="noreferrer"
-        ></a>
+        >
+          {" "}
+        </a>
       </li>
       <li className={styles.item}>
         <a
@@ -30,7 +29,9 @@ export default function SocialMedia() {
           href="https://www.youtube.com/"
           target="_blank"
           rel="noreferrer"
-        ></a>
+        >
+          {" "}
+        </a>
       </li>
       <li className={styles.item}>
         <a
@@ -38,7 +39,9 @@ export default function SocialMedia() {
           href="https://www.facebook.com/"
           target="_blank"
           rel="noreferrer"
-        ></a>
+        >
+          {" "}
+        </a>
       </li>
     </ul>
   );
