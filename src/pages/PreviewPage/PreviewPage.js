@@ -1,4 +1,5 @@
 // import { Route, Routes, Navigate } from "react-router-dom";
+// import { useMatches } from "react-router-dom";
 
 import Container from "../../components/Container";
 // import Navigation from "../../components/Navigation";
@@ -24,6 +25,7 @@ import AboutMe from "../../components/AboutMe";
 
 export default function PreviewPage() {
   // console.log("this.props", this.props);
+
   return (
     <>
       <LayoutSection id="hero" classNameProps={styles.hero}>
