@@ -8,7 +8,8 @@
 }
 
 .item {
-  outline: 1px solid tomato;
+  // width: 100%;
+  // outline: 1px solid tomato;
   @include media-tablet {
     padding: 8px;
     min-width: 267px;

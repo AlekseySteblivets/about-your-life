@@ -15,6 +15,7 @@ export default function PortpholioItem({ pathNamePortpholio }) {
         <Cart />
         <Cart />
         <Cart />
+        <Cart />
       </ul>
     </>
   );

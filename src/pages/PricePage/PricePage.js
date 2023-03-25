@@ -1,4 +1,4 @@
-import { useParams, useSearchParams, useLocation } from "react-router-dom";
+// import { useParams, useSearchParams, useLocation } from "react-router-dom";
 
 import Container from "../../components/Container";
 
@@ -8,14 +8,14 @@ import LayoutSection from "../../views/LayoutSection";
 import styles from "./PricePage.module.scss";
 
 export default function PricePage() {
-  const qwe = useParams();
-  console.log("qwePricePage", qwe);
+  // const qwe = useParams();
+  // console.log("qwePricePage", qwe);
 
-  const [searchParams] = useSearchParams();
-  console.log("searchParams", searchParams);
+  // const [searchParams] = useSearchParams();
+  // console.log("searchParams", searchParams);
 
-  const location = useLocation();
-  console.log("location", location);
+  // const location = useLocation();
+  // console.log("location", location);
 
   return (
     <>

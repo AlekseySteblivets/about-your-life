@@ -14,7 +14,7 @@ function App() {
   const location = useLocation();
   const [pathNamePortpholio, setPathNamePortpholio] = useState("");
 
-  console.log("location", location);
+  // console.log("location", location);
   const curPathNamePortpholio = () => {
     if (location.pathname !== "/contact")
       return setPathNamePortpholio(location.pathname.slice(1));

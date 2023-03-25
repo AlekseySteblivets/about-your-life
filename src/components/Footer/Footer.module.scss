@@ -10,8 +10,9 @@
 }
 
 .title {
-  // color: $color-white;
+  position: relative;
   margin-bottom: 10px;
+  padding-top: 25px;
   @include font-delius;
 
   @include media-tablet {
@@ -19,5 +20,18 @@
   }
   @include media-desktop {
     margin-bottom: 20px;
+    padding-top: 40px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 104px;
+    border: 1px solid $color-black;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    @include media-tablet {
+      width: 358px;
+    }
   }
 }
