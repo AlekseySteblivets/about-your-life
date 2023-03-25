@@ -1,18 +1,28 @@
-import { Routes, Route, useParams, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
-import "./App.scss";
 import Layout from "./pages/Layout/Layout";
 import PreviewPage from "./pages/PreviewPage/PreviewPage";
 import PricePage from "./pages/PricePage/PricePage";
-import WeddingPage from "./pages/WeddingPage/WeddingPage";
-import CouplesPage from "./pages/CouplesPage";
+import PortpholioPage from "./pages/PortpholioPage";
+import VideoPage from "./pages/VideoPage/VideoPage";
 import NotFound from "./components/NotFound/NotFound";
 
+import "./App.scss";
+
 function App() {
-  // const qwe = useParams();
-  // console.log("qwe", qwe);
   const location = useLocation();
-  console.log("locationApp", location);
+  const [pathNamePortpholio, setPathNamePortpholio] = useState("");
+
+  console.log("location", location);
+  const curPathNamePortpholio = () => {
+    if (location.pathname !== "/contact")
+      return setPathNamePortpholio(location.pathname.slice(1));
+  };
+
+  useEffect(() => {
+    curPathNamePortpholio();
+  });
 
   return (
     <div className="App">
@@ -20,8 +30,12 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<PreviewPage />} />
           <Route path="/price" element={<PricePage />} />
-          <Route path="/wedding" element={<WeddingPage />} />
-          <Route path="/couples" element={<CouplesPage />} />
+          <Route path="/video" element={<VideoPage />} />
+          <Route
+            path={pathNamePortpholio}
+            element={<PortpholioPage pathNamePortpholio={pathNamePortpholio} />}
+          />
+
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
@@ -30,8 +44,3 @@ function App() {
 }
 
 export default App;
-
-// <Routes>
-//   <Route path="/" element={<PreviewPage />} />
-//   <Route path="/price" element={<PricePage />} />
-// </Routes>;

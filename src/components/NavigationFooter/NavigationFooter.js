@@ -1,44 +1,34 @@
-import { Link, useLocation } from "react-router-dom";
-// import { useState } from "react";
-// import SelectFooter from "../../lib/SelectFooter";
+import { Link } from "react-router-dom";
+import { navigationList } from "../../utils/navigationList";
 
 import styles from "./NavigationFooter.module.scss";
 
 export default function NavigationFooter() {
-  const location = useLocation();
-  console.log("locationNavFooter", location);
-  // const [numberMonth, setNumberMonth] = useState("portfolio");
-  // const monthList = ["wedding", "couples", "family", "portrait"];
-
-  // const passNumberMonth = (selectedEl) => {
-  //   setNumberMonth(selectedEl);
-  // };
-
   return (
     <nav className={styles.navFooter}>
       <ul className={styles.menu}>
-        <li className={styles.item}>
-          <a href="/">home</a>
-        </li>
-        <li className={styles.item}>
-          <a href="#portpholio">portfolio</a>
-
-          {/* <SelectFooter
-            arrData={monthList}
-            currData={numberMonth}
-            passNumberMonthOrYear={passNumberMonth}
-          /> */}
-        </li>
-        <li className={styles.item}>
-          <Link to="/price">price</Link>
-        </li>
-
-        <li className={styles.item}>
-          <a href="/">video</a>
-        </li>
-        <li className={styles.item}>
-          <a href="/">contact</a>
-        </li>
+        {navigationList.map((nameNav) => {
+          if (nameNav === "home") {
+            return (
+              <li key={nameNav} className={styles.item}>
+                <a href="/">{nameNav}</a>
+              </li>
+            );
+          }
+          if (nameNav === "portpholio") {
+            return (
+              <li key={nameNav} className={styles.item}>
+                <a href="#portpholio">{nameNav}</a>
+              </li>
+            );
+          } else {
+            return (
+              <li key={nameNav} className={styles.item}>
+                <Link to={nameNav}>{nameNav}</Link>
+              </li>
+            );
+          }
+        })}
       </ul>
     </nav>
   );

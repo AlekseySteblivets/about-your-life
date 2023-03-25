@@ -3,7 +3,6 @@ import styles from "./Portpholio.module.scss";
 import { portpholioList } from "../../utils/portpholioList";
 
 export default function Portpholio() {
-  console.log("portpholioList", portpholioList);
   return (
     <div className={styles.block}>
       <div className={styles.list}>
@@ -17,7 +16,7 @@ export default function Portpholio() {
           })}
         </ul>
         <div className={styles.blockFilm}>
-          <Link to="/films">films</Link>
+          <Link to="/video">films</Link>
         </div>
         <div className={styles.linkPrice}>
           <Link to="/price">PRICE</Link>

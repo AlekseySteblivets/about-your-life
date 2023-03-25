@@ -1,1 +1,1 @@
-export const portpholioList = ["family", "wedding", "couples", "portrait"];
+export const portpholioList = ["wedding", "couples", "family", "portrait"];

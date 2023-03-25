@@ -48,6 +48,12 @@
 }
 
 //----------------------------------------------font Delius---------------------------------------------//
+@mixin font-delius-bigest {
+  font-family: "Delius";
+  // font-weight: 400;
+  font-size: 32px;
+}
+
 @mixin font-delius-big {
   font-family: "Delius";
   // font-weight: 400;
