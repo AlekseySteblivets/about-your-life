@@ -42,7 +42,7 @@ export default function VideoPortpholio() {
       <p></p>
       <a
         className={styles.linkYouTube}
-        href="https://www.youtube.com/"
+        href="https://www.youtube.com/channel/UCK6HVE5UvIK6j1B70vtHZzg"
         target="_blank"
         rel="noreferrer"
       >

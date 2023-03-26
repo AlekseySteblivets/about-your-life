@@ -1,9 +1,16 @@
 @import "../../assets/styles/media";
 @import "../../assets/styles/fonts";
 
+// .blockSlider {
+//   // flex: 1 1 auto;
+//   // min-width: 0;
+//   margin: 0 auto;
+// }
+
 .menu {
   display: flex;
   flex-direction: column;
+
   @include media-tablet {
     flex-wrap: wrap;
     flex-direction: row;
@@ -22,3 +29,9 @@
   margin-top: 40px;
   @include font-delius-bigest;
 }
+
+// /////----------------------------------------
+
+// .itemSwiperSlide {
+//   min-width: 0 !important;
+// }

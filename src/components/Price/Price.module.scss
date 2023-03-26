@@ -44,20 +44,20 @@
   font-size: 15px;
 }
 
-.button {
-  position: relative;
-  @include font-signika;
-  border: none;
-  margin-bottom: 48px;
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: -6px;
-    width: 120%;
-    border: 1px solid $color-black;
-  }
-}
+// .button {
+//   position: relative;
+//   @include font-signika;
+//   border: none;
+//   margin-bottom: 48px;
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     bottom: 0px;
+//     left: -6px;
+//     width: 120%;
+//     border: 1px solid $color-black;
+//   }
+// }
 
 .textFinal {
   text-align: start;
@@ -76,4 +76,8 @@
     display: flex;
     justify-content: space-between;
   }
+}
+
+.blockWedding {
+  padding-bottom: 20px;
 }

@@ -26,8 +26,8 @@ export default function SocialMedia() {
       <li className={styles.item}>
         <a
           className={styles.linkFb}
-          href="https://www.youtube.com/"
           target="_blank"
+          href="https://www.facebook.com/"
           rel="noreferrer"
         >
           {" "}
@@ -36,7 +36,7 @@ export default function SocialMedia() {
       <li className={styles.item}>
         <a
           className={styles.linkYouTube}
-          href="https://www.facebook.com/"
+          href="https://www.youtube.com/channel/UCK6HVE5UvIK6j1B70vtHZzg"
           target="_blank"
           rel="noreferrer"
         >

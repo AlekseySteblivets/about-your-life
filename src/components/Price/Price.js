@@ -21,9 +21,9 @@ export default function Price() {
               Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
               sem. Nulla consequat massa quis enim.
             </p>
-            <button type="button" className={styles.button}>
+            {/* <button type="button" className={styles.button}>
               read more
-            </button>
+            </button> */}
           </li>
           <li className={styles.item}>
             <h4 className={styles.itemTitle}> 8 hour</h4>
@@ -35,9 +35,9 @@ export default function Price() {
               Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
               sem. Nulla consequat massa quis enim.
             </p>
-            <button type="button" className={styles.button}>
+            {/* <button type="button" className={styles.button}>
               read more
-            </button>
+            </button> */}
           </li>
           <li className={styles.item}>
             <h4 className={styles.itemTitle}> 12 hour</h4>
@@ -49,9 +49,9 @@ export default function Price() {
               Donec quam felis, ultricies nec, pellentesque eu, pretium quis,
               sem. Nulla consequat massa quis enim.
             </p>
-            <button type="button" className={styles.button}>
+            {/* <button type="button" className={styles.button}>
               read more
-            </button>
+            </button> */}
           </li>
         </ul>
       </div>
@@ -69,9 +69,9 @@ export default function Price() {
                 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
                 quis, sem. Nulla consequat massa quis enim.
               </p>
-              <button type="button" className={styles.button}>
+              {/* <button type="button" className={styles.button}>
                 read more
-              </button>
+              </button> */}
             </li>
           </ul>
         </div>
@@ -88,9 +88,9 @@ export default function Price() {
                 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
                 quis, sem. Nulla consequat massa quis enim.
               </p>
-              <button type="button" className={styles.button}>
+              {/* <button type="button" className={styles.button}>
                 read more
-              </button>
+              </button> */}
             </li>
           </ul>
         </div>
@@ -106,9 +106,9 @@ export default function Price() {
                 mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
                 quis, sem. Nulla consequat massa quis enim.
               </p>
-              <button type="button" className={styles.button}>
+              {/* <button type="button" className={styles.button}>
                 read more
-              </button>
+              </button> */}
             </li>
           </ul>
         </div>
