@@ -21,13 +21,6 @@ export default function NewWorks() {
           <h3 className={styles.nameWork}>name</h3>
           <p className={styles.data}>data</p>
         </li>
-        <li className={styles.item}>
-          <a href="/">
-            <img alt="foto" src={justFoto} />
-          </a>
-          <h3 className={styles.nameWork}>name</h3>
-          <p className={styles.data}>data</p>
-        </li>
       </ul>
     </div>
   );
