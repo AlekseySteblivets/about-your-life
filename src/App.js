@@ -9,6 +9,7 @@ import VideoPage from "./pages/VideoPage/VideoPage";
 import NotFound from "./components/NotFound/NotFound";
 
 import "./App.scss";
+import ContactPage from "./pages/ContactPage/ContactPage";
 
 function App() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function App() {
           <Route index element={<PreviewPage />} />
           <Route path="/price" element={<PricePage />} />
           <Route path="/video" element={<VideoPage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route
             path={pathNamePortpholio}
             element={<PortpholioPage pathNamePortpholio={pathNamePortpholio} />}
