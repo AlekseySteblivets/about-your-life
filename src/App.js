@@ -6,10 +6,12 @@ import PreviewPage from "./pages/PreviewPage/PreviewPage";
 import PricePage from "./pages/PricePage/PricePage";
 import PortpholioPage from "./pages/PortpholioPage";
 import VideoPage from "./pages/VideoPage/VideoPage";
+import ContactPage from "./pages/ContactPage/ContactPage";
 import NotFound from "./components/NotFound/NotFound";
 
+import { portpholioList } from "./utils/portpholioList";
+
 import "./App.scss";
-import ContactPage from "./pages/ContactPage/ContactPage";
 
 function App() {
   const location = useLocation();
@@ -17,7 +19,7 @@ function App() {
 
   // console.log("location", location);
   const curPathNamePortpholio = () => {
-    if (location.pathname !== "/contact")
+    if (portpholioList.includes(location.pathname.slice(1)))
       return setPathNamePortpholio(location.pathname.slice(1));
   };
 

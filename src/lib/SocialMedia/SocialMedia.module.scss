@@ -6,11 +6,11 @@
   justify-content: center;
   align-items: center;
   padding-top: 18px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
   @include media-tablet {
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 }
 
@@ -59,4 +59,20 @@
   padding: 0;
   border: none;
   background-image: url("../../assets/img/icons/icon-youtube-svg.svg");
+}
+
+.linkStocksy {
+  display: none;
+
+  width: 41px;
+  height: 25px;
+  padding: 0;
+  border: none;
+  background-image: url("../../assets/img/icons/icon-stocksy-svg.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.showButton {
+  display: block;
 }

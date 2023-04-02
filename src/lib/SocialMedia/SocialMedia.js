@@ -1,6 +1,7 @@
 import styles from "./SocialMedia.module.scss";
+import cn from "classnames";
 
-export default function SocialMedia() {
+export default function SocialMedia({ pathnameLocationContactIsTrue }) {
   return (
     <ul className={styles.menu}>
       <li className={styles.item}>
@@ -36,6 +37,18 @@ export default function SocialMedia() {
       <li className={styles.item}>
         <a
           className={styles.linkYouTube}
+          href="https://www.youtube.com/channel/UCK6HVE5UvIK6j1B70vtHZzg"
+          target="_blank"
+          rel="noreferrer"
+        >
+          {" "}
+        </a>
+      </li>
+      <li className={styles.item}>
+        <a
+          className={cn(styles.linkStocksy, {
+            [styles.showButton]: pathnameLocationContactIsTrue,
+          })}
           href="https://www.youtube.com/channel/UCK6HVE5UvIK6j1B70vtHZzg"
           target="_blank"
           rel="noreferrer"
