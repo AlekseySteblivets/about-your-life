@@ -15,7 +15,9 @@ export default function ContactData() {
             href="https://web.telegram.org/"
             target="_blank"
             rel="noreferrer"
-          ></a>
+          >
+            {" "}
+          </a>
         </li>
 
         <li className={styles.item}>
@@ -24,7 +26,9 @@ export default function ContactData() {
             href="https://web.viber.com"
             target="_blank"
             rel="noreferrer"
-          ></a>
+          >
+            {" "}
+          </a>
         </li>
       </ul>
     </>

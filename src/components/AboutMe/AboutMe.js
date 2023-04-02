@@ -1,5 +1,5 @@
 import SocialMedia from "../../lib/SocialMedia";
-import cn from "classnames";
+// import cn from "classnames";
 
 import styles from "./AboutMe.module.scss";
 import ContactData from "../ContactData/ContactData";

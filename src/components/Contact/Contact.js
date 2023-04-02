@@ -2,6 +2,7 @@ import { useLocation } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import AboutMe from "../AboutMe/AboutMe";
+import SendForm from "../../forms/SendForm/SendForm";
 
 export default function Contact() {
   const location = useLocation();
@@ -21,7 +22,7 @@ export default function Contact() {
   return (
     <div>
       <AboutMe pathnameLocationContactIsTrue={pathnameLocationContactIsTrue} />
-      <p>45454</p>
+      <SendForm />
     </div>
   );
 }

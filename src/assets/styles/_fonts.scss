@@ -25,18 +25,6 @@
   font-size: 20px;
 }
 
-@mixin font-inter-title-about-me {
-  font-family: "Inter";
-  font-size: 36px;
-  line-height: 1.22;
-}
-
-@mixin font-inter-text-about-me {
-  font-family: "Inter";
-  font-size: 20px;
-  line-height: 1.39;
-}
-
 @mixin font-footer-nav {
   font-size: 14px;
   line-height: 1.28;
@@ -114,4 +102,35 @@
   font-family: "Source Serif Pro";
   font-weight: 700;
   font-size: 24px;
+}
+
+//==========================================inter========================================
+@mixin font-inter-title-about-me {
+  font-family: "Inter";
+  font-size: 36px;
+  line-height: 1.22;
+}
+
+@mixin font-inter-text-about-me {
+  font-family: "Inter";
+  font-size: 20px;
+  line-height: 1.39;
+}
+
+@mixin font-inter-smaler {
+  font-family: "Inter";
+  font-size: 11px;
+  line-height: 1.21;
+}
+
+@mixin font-inter-small {
+  font-family: "Inter";
+  font-size: 13px;
+  line-height: 1.21;
+}
+
+@mixin font-inter-ordinary {
+  font-family: "Inter";
+  font-size: 15px;
+  line-height: 1.21;
 }
